@@ -4,8 +4,8 @@ body{
 }
 
 .slider{
-    width: 800px;
-    height: 400px;
+    width: 1200px;
+    height:600px;
     background-image: url("images/slide1.jpg");
     margin: 100px auto;
     animation: slide 20s infinite;
