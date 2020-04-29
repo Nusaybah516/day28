@@ -220,7 +220,7 @@ table {
   }
   
   .topnav #myLinks {
-    display: none;
+    display: flex;
   }
   
  
@@ -405,12 +405,8 @@ table {
     }
 }
 @media screen and (max-width:601px){
-    div{
-        font-size: 80px;
-        text-align: center;
-    }
-}
-@media screen and (max-width:601px){
+
+	@media screen and (max-width:601px){
     div{
         font-size: 30px;
         text-align: center;
