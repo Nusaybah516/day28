@@ -364,7 +364,7 @@ table {
 @media only screen and (max-width:420px){
     h1{
         width: 300px;
-        font-size: 80px;
+    
         text-align: center;
     }
 
