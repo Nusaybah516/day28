@@ -369,18 +369,13 @@ table {
     }
 
 }
-@media only screen and (max-width:320px){
-    h1{
-        width: 250px;
-        font-size: 30px;
-        text-align: center;
-    }
 
 }
 @media only screen and (max-width:270px){
     h1{
         width: 200px;
         font-size: 2.5em;
+	    text-align:center;
     }
 
 }
