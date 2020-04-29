@@ -406,12 +406,7 @@ table {
 }
 @media screen and (max-width:601px){
 
-	@media screen and (max-width:601px){
-    div{
-        font-size: 30px;
-        text-align: center;
-    }
-}
+
 @media screen and (max-width:480px){
     image.slider{
         width: 50%;
