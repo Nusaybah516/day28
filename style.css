@@ -1,0 +1,480 @@
+
+nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    background-color: green ;
+    }
+    nav .logo{
+    flex: 1;
+    color: rgb(2, 37, 18);
+    text-shadow: 0 0 2px #000;
+    margin-left: 50px;
+    }
+    nav ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    nav ul li{
+    list-style: none;
+    }
+    nav ul li a{
+    text-decoration: none;
+    color: rgb(2, 37, 18);
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    }
+    
+    nav ul li a:hover{
+    border-bottom: 2px solid green;
+    }
+    nav .menu{
+    font-size: 2.5em;
+    display: none;
+    }
+  
+    @media (max-width:1000px){
+      nav ul{
+      position: fixed;
+      top:100px;
+      right: -100%;
+      background: whitesmoke;
+      height: calc(100vh - 100px);
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      transition: right 0.5s linear;
+      }
+      nav .menu{
+      display: block;
+      width: 100px;
+      text-align: center;
+      }
+      #chk1:checked ~ ul{
+      right: 0;
+      }
+    }
+    @media (max-width:500px){
+      nav .logo{
+      margin-left: 10px;
+      }
+      .logo h1{
+      font-size: 1.5em;
+      }
+      nav ul{
+      width: 100%;
+      }
+    }
+    input[type="checkbox"]{
+    display: none;
+    }
+
+  
+  caption{
+      font-size: medium;
+      color: rgb(0, 99, 0);
+      font-family: sans-serif;
+      font-weight: bold;
+  }
+  table{
+      columns: auto;
+      color:rgb(7, 6, 6);
+  }
+  
+
+
+img[src="ules logo.jpg"]{
+    position: absolute top;
+    align-self: auto;
+}
+img[src="images/excos.png"]{
+    position: relative;
+    align-content: center;
+}
+
+
+footer{
+    background-color:darkgreen;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer h5{
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+
+
+
+
+.about-section{
+    width: 100vw;  
+}
+
+.about-container{ 
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-box{
+    width: 50%;
+    text-align: left;
+    line-height: 250%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  
+}
+
+h2{
+    color: darkgreen;
+}
+
+p{
+    font-family: sans-serif;
+    width: 100%;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.right-box{    
+    width: 450px;
+    height: 150px;
+    margin-left: 6%;
+    background-image: url("images/president.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat:  no-repeat;
+    height: 480px;
+    border-radius: 20px;
+}
+
+.pic1,.pic2,.pic3{
+    position: relative;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed=parallax
+    scroll=normal
+    */
+    background-attachment: fixed;
+}
+
+.pic1{
+    background-image: url("images/support.jpg");
+    min-height: 100%;
+}
+.pic2{
+    background-image: url("images/tutorial.jpg");
+    min-height: 400px;
+}
+.pic3{
+    background-image: url("images/scholar.jpg");
+    min-height: 400px;
+}
+
+
+*{
+    margin: 3px;
+    padding: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+}
+
+h2 {
+	font-family: fantasy;
+	font-size: 2em;
+	border-bottom: 2px solid green;
+    border-right: 2px solid green;
+    border-left: 2px solid green;
+    border-top:2px solid green ;
+	width: 400px;
+	text-align: center;
+    margin-top: 10px;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+table,th,td{
+    border: 2px  solid black;
+    border-radius: 10px;
+}
+th{
+    text-align: left;
+}
+table {
+    border-collapse: collapse;
+  }
+  table {
+    width: 100%;
+  }
+  
+  
+  th {
+    height: 50px;
+  }
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }th, td {
+    border-bottom: 1px solid #ddd;
+  }tr:nth-child(odd) {background-color: green;}
+
+  th {
+    background-color: green;
+    color: white;
+  }
+
+.donut-section{
+    width: 100vmax;
+}
+
+.image-container{
+    width: 200%;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: flex;
+  }
+  
+ 
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: green;
+    color: black;
+  }
+  
+  
+  .active {
+    background-color: green;
+    color: white;
+  }
+
+.row-one, .row-two, .row-three,.row-four{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;    
+}
+
+.grid-item{    
+    width: 30%;
+    height: 310px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+#donut-one{
+    background-image: url("images/img1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-two{
+    background-image: url("images/img2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-three{
+    background-image: url("images/img3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-four{
+    background-image: url("images/img4.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-five{
+    background-image: url("images/img5.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-six{
+    background-image: url("images/img6.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-seven{
+    background-image: url("images/img7.png");
+    background-size: cover;
+    background-position: center;
+}
+#donut-eight{
+    background-image: url("images/img8.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-nine{
+    background-image: url("images/img9.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-ten{
+    background-image: url("images/img10.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-eleven{
+    background-image: url("images/img11.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#donut-twelve{
+    background-image: url("images/img12.png");
+    background-size: cover;
+    background-position: center;
+}
+.grid-item{
+	width: 1000px;
+	height: 400px;
+	margin: 10px;
+	transition: all 1s;
+}
+
+.grid-item:hover {
+	transform: scale(1.1);
+}
+
+img[src="images/ECX.png"] {
+    align-content: center;
+}
+img[src="images/ecx class.png"] {
+    align-content: center;
+}
+img[src="images/ecx event.png"] {
+    align-content: center;
+}
+@media only screen and (max-width:840px){
+    .row-one,.row-two,.row-three, .row-four,.top-row,.bottom-row,.topnav{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .grid-item{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:420px){
+    h1{
+        width: 300px;
+        font-size: 80px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:320px){
+    h1{
+        width: 250px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:270px){
+    h1{
+        width: 200px;
+        font-size: 2.5em;
+    }
+
+}
+@media only screen and (max-width:220px){
+    h1{
+        width: 150px;
+        font-size: 2em;
+    }
+
+}
+@media only screen and (max-width:170px){
+    h1{
+        width: 100px;
+        font-size: 1.9em;
+    }
+
+}
+@media screen and (max-width:600px){
+    .topnav{
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width:601px){
+    div{
+        font-size: 80px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:601px){
+    div{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:480px){
+    image.slider{
+        width: 50%;
+        height: 50%;
+    }
+}
