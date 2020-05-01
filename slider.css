@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.slider{
+    width: 1200px;
+    height: 600px;
+    background-image: url("slide5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 100px auto;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    25%{
+        background-image: url("01.jpg");
+    }
+    50%{
+        background-image: url("screw.jpg");
+    }
+    75%{
+        background-image: url("02.jpg");
+    }
+    100%{
+        background-image: url("slide5.png");
+    }
+    
+}
